@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/*---------------------------------------------------------*/
+/*----------TYPOGRAPHY-----------*/
+/*---------------------------------------------------------*/
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    color: #1792d2;
+}
+
+a:hover,
+a:active {
+    color: #143774;
+}
+
+/* h1 subtitle */
+.subtitle {
+    color: #1792d2;
+    margin: 0;
+    font-weight: 400;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.article-info,
+.read-more {
+    font-size: .85rem;
+}
+
+.read-more {
+    text-transform: uppercase;
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.read-more:hover,
+.read-more:active {
+    color: #143774;
+    text-decoration: underline;
+}
+
+.article-info {
+    color: #707070;
+    margin: 2.1em 0;
+}
+
+header {
+    padding: 2rem 0;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+@media (min-width: 755px) {
+    .container-flex {
+        flex-direction: row;
+    }
+
+    main {
+        width: 65%;
+    }
+    
+    aside {
+        width: 30%;
+    }
+}
+
+nav li {
+    list-style: none;
+    margin-left: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a:active {
+    color: #1792d2;
+}
+
+@media (max-width: 755px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .75rem 0;
+    }
+}
+
+/* articles */
+
+.article-featured {
+    border-bottom: 1px solid #929292;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+.article-featured {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-img {
+    order: -2;
+}
+
+.article-title {
+    order: 1;
+}
+
+.article-body {
+    line-height: 1.4rem;
+    color: #707070;
+}
+
+.article-body,
+ .read-more {
+    order: 2;
+}
+
+@media (min-width:755px) {
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main {
+        width: 68%;
+    }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
+
+    .article-img {
+        width: 100%;
+        min-height: 240px;
+        object-fit: cover;
+    }
+}
+
+/* widgets */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-widget {
+    border: #EBEBEB 20px solid;
+    padding: 1.2em;
+    margin-bottom: 2em;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.widget-body {
+    color: #1792d2;
+    font-size: .7em;
+}
+
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #b6b6b6;
+    margin-top: 1.6em;
+}
+
+.widget-recent-post:last-of-type {
+    border-bottom: none;
+}
+
+.widget-img {
+    order: 1;
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+
+.widget-post-title {
+    order: 2;
+    font-size: .8em;
+}
+
+@media (min-width: 755px) {
+    .widget-img {
+        width: initial;
+        height: initial;
+    }
+}
+
+/* footer */
+
+footer {
+    background-color: #143774;
+    text-align: center;
+    font-size: .9rem;
+    padding: 1.7rem;
+}
+
+.footer {
+    color: rgb(228, 228, 228);
+}
