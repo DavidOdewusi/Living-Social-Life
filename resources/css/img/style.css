@@ -273,3 +273,32 @@ footer {
 .footer {
     color: rgb(228, 228, 228);
 }
+
+/* about */
+
+.article-subtitle {
+    color: #1792d2;
+    order: 2;
+}
+
+.about-title {
+    margin-top: 1em;
+}
+
+.about-article-featured {
+    border-bottom: none;
+}
+
+.about-img {
+    width: 100%;
+    height: 100px;
+    object-position: top;
+}
+
+@media (max-width: 755px) {
+    .about-img {
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+    }
+}
